@@ -2,28 +2,28 @@
 
 @font-face {
   font-family: "PPRightGroteskWide";
-  src: url("PPRightGroteskText-WideBold.woff2") format("woff2");
+  src: url("./assets/PPRightGroteskText-WideBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PPRightGroteskWide";
-  src: url("PPRightGroteskText-WideLight.woff2") format("woff2");
+  src: url("./assets/PPRightGroteskText-WideLight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PPRightGroteskWide";
-  src: url("PPRightGroteskText-WideMedium.woff2") format("woff2");
+  src: url("./assets/PPRightGroteskText-WideMedium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PPRightGroteskWide";
-  src: url("PPRightGroteskText-WideRegular.woff2") format("woff2");
+  src: url("./assets/PPRightGroteskText-WideRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }

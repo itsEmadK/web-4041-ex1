@@ -1,10 +1,10 @@
-@import url(./fonts.css);
+@import url("./fonts.css");
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: system-ui;
+  font-family: PPRightGroteskWide, system-ui;
 }
 
 html {
@@ -91,7 +91,8 @@ a.button {
 }
 
 .hero-images {
-  margin-top: 108px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -138,4 +139,18 @@ a.button {
 .hero-buttons {
   display: flex;
   gap: 12px;
+}
+
+.features-1 {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 48px 96px 80px 128px;
+  font-size: 18px;
+}
+
+.features-1 .feature-item-1 {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0px;
 }
