@@ -4,4 +4,59 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: system-ui;
+}
+
+html {
+  --page-bg-color: #eee7d7;
+  --top-nav-border-bottom: 1px solid #143420;
+  --text-color: #143420;
+  --button-bg-color: #e3fecc;
+}
+
+body {
+  background-color: var(--page-bg-color);
+  color: var(--text-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+  border-bottom: var(--top-nav-border-bottom);
+  gap: 12px;
+  line-height: 1.2;
+}
+
+.top-nav-item {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.top-nav-item.google-play {
+  margin-right: auto;
+}
+
+.top-nav-item.google-play,
+.top-nav-item.app-store {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-nav-item.login {
+  background-color: var(--button-bg-color);
+  padding: 12px 24px;
+  align-self: center;
+  display: flex;
 }
