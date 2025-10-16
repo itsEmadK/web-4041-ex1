@@ -28,6 +28,12 @@ a {
   color: var(--text-color);
 }
 
+a.button {
+  background-color: var(--button-bg-color);
+  padding: 12px 24px;
+  font-weight: 500;
+}
+
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -58,7 +64,6 @@ a {
   background-color: var(--button-bg-color);
   padding: 12px 24px;
   align-self: center;
-  display: flex;
 }
 
 .bottom-nav {
@@ -73,4 +78,64 @@ a {
 .bottom-nav-item {
   font-size: 16px;
   font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 128px;
+  padding-right: 48px;
+  gap: 48px;
+  justify-content: space-between;
+}
+
+.hero-images {
+  margin-top: 108px;
+  position: relative;
+}
+
+.hero-images img {
+  max-width: 100%;
+}
+
+.hero-images img.mood {
+  max-width: 648px;
+}
+
+.hero-images img.screen {
+  position: absolute;
+  left: 50%;
+  top: -24%;
+  transform: translate(-50%);
+  border: 1px solid white;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 48px;
+  max-width: calc(237.58px + 12px + 12px);
+}
+
+.hero-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: center;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.hero-desc {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 45ch;
+  line-height: 1.4;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
 }
