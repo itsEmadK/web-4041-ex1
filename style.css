@@ -112,7 +112,7 @@ a.button {
   border: 1px solid white;
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 48px;
+  border-radius: 40px;
   max-width: calc(237.58px + 12px + 12px);
 }
 
@@ -153,4 +153,48 @@ a.button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0px;
+}
+
+.features-2 {
+  padding: 160px 128px;
+}
+
+.features-2 h2 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: -5px;
+  margin-bottom: 80px;
+}
+
+.features-2 .features-container {
+  display: flex;
+  gap: 120px;
+}
+
+.feature-item-2 {
+  text-align: center;
+}
+
+.feature-item-2 .screen {
+  border: 1px solid var(--text-color);
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  max-width: calc(201.67px + 12px + 12px);
+  margin-bottom: 48px;
+}
+
+.feature-item-2 .feature-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.feature-item-2 .feature-desc {
+  max-width: 37ch;
+  font-size: 16px;
+  line-height: 150%;
 }
