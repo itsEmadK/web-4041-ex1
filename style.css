@@ -198,3 +198,27 @@ a.button {
   font-size: 16px;
   line-height: 150%;
 }
+
+.invite {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  margin-bottom: 100px;
+}
+
+.invite h4 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.invite p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.invite a {
+  padding: 16px 24px;
+}
