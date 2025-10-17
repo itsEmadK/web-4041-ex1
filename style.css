@@ -80,6 +80,10 @@ a.button {
   font-weight: 500;
 }
 
+.hamburger {
+  display: none;
+}
+
 section.hero {
   display: flex;
   padding-top: 48px;
@@ -366,4 +370,10 @@ footer :is(a, p) {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: -0.75px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
