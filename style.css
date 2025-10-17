@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: PPRightGroteskWide, system-ui;
+  letter-spacing: -1px;
 }
 
 html {
@@ -32,6 +33,10 @@ a.button {
   background-color: var(--button-bg-color);
   padding: 12px 24px;
   font-weight: 500;
+}
+
+button {
+  cursor: pointer;
 }
 
 .top-nav {
@@ -260,6 +265,8 @@ section.explore {
 
 .explore-video {
   object-fit: cover;
+  width: 846px;
+  aspect-ratio: 4 / 3;
 }
 
 section.links {
@@ -362,8 +369,10 @@ footer {
   align-items: center;
 }
 
-footer .cookies {
+footer .texts {
+  display: flex;
   margin-right: auto;
+  gap: 24px;
 }
 
 footer :is(a, p) {
@@ -376,4 +385,236 @@ footer :is(a, p) {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+@media screen and (width <= 425px) {
+  .for-providers,
+  .download-the-app,
+  .for-businesses,
+  .bottom-nav li {
+    display: none;
+  }
+
+  .top-nav {
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+
+  .top-nav .top-nav-item {
+    padding: 0px;
+    gap: 2px;
+  }
+
+  .top-nav .login {
+    padding: 12px 18px;
+  }
+
+  .bottom-nav .logo,
+  .bottom-nav .hamburger {
+    display: block;
+  }
+
+  .bottom-nav button {
+    background-color: transparent;
+    border: none;
+  }
+
+  ul.bottom-nav {
+    padding: 12px;
+    justify-content: space-between;
+  }
+
+  section.hero {
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  section.hero {
+    gap: 68px;
+  }
+
+  .hero-texts {
+    gap: 24px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    letter-spacing: 0px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    max-width: 50ch;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+  }
+
+  .hero-images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-images .mood {
+    width: 284px;
+    height: 196px;
+  }
+
+  .hero-images img.screen {
+    width: 178px;
+    top: -40%;
+    padding: 8px;
+  }
+
+  section.features-1 {
+    flex-direction: column;
+    padding: 24px 18px;
+    padding-top: 64px;
+    text-align: center;
+  }
+
+  .features-1 .feature-item-1 {
+    letter-spacing: -1px;
+    font-size: 16px;
+  }
+
+  .features-2 .features-container {
+    flex-direction: column;
+  }
+
+  section.features-2 {
+    padding: 48px 18px;
+  }
+
+  section.features-2 h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-shadow: none;
+  }
+
+  .feature-item-2 .screen {
+    width: 176px;
+    padding: 8px;
+    margin-bottom: 18px;
+  }
+
+  .feature-item-2 .feature-title,
+  .feature-item-2 .feature-desc {
+    letter-spacing: -1px;
+  }
+
+  section.invite {
+    text-align: center;
+    padding: 24px 18px 80px 18px;
+    margin-bottom: 0px;
+  }
+
+  .invite .invite-title,
+  .invite .invite-desc {
+    letter-spacing: -1px;
+  }
+
+  .invite .invite-desc {
+    margin-bottom: 12px;
+  }
+
+  section.explore {
+    flex-direction: column-reverse;
+  }
+
+  section.explore .explore-texts {
+    padding: 18px;
+  }
+
+  .explore-title {
+    font-size: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 18px;
+  }
+
+  .explore-desc {
+    font-size: 18px;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+
+  .explore-video {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
+
+  section.links {
+    flex-direction: column;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 48px;
+    gap: 12px;
+  }
+
+  .links .about {
+    margin-bottom: 12px;
+  }
+
+  .links .about h5 {
+    letter-spacing: -1px;
+  }
+
+  .explore-the-hyve-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .links .explore-the-hyve {
+    grid-template-columns: 1fr auto;
+  }
+
+  .download-images {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .download-images .download-image {
+    width: 139px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 48px;
+    margin: 0px 18px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  footer p.copyright {
+    order: 1;
+    width: 90%;
+    margin-top: 6px;
+  }
+
+  footer .texts {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  footer .texts > * {
+    width: 37.5%;
+    text-align: center;
+  }
+
+  footer .icons {
+    order: -1;
+  }
 }
