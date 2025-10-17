@@ -222,3 +222,37 @@ a.button {
 .invite a {
   padding: 16px 24px;
 }
+
+.explore {
+  display: flex;
+  align-items: center;
+}
+
+.explore-texts {
+  display: grid;
+  justify-items: start;
+  padding: 0px 80px;
+}
+
+.explore-title {
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+.explore-desc {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.explore a {
+  padding: 16px 24px;
+  font-size: 14px;
+}
+
+.explore-video {
+  object-fit: cover;
+}
